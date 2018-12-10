@@ -1,4 +1,4 @@
-package com.your-app-name;
+package com.reactlibrary;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
@@ -9,10 +9,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import com.facebook.react.bridge.JavaScriptModule;
+
 public class VoipPushNotification implements ReactPackage {
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+        return Collections.emptyList();
+    }
+
+    public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
 

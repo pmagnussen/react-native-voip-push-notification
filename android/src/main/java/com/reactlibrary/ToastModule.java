@@ -1,6 +1,4 @@
-// ToastModule.java
-
-package com.your-app-name;
+package com.reactlibrary;
 
 import android.widget.Toast;
 
@@ -20,13 +18,6 @@ public class ToastModule extends ReactContextBaseJavaModule {
 
     public ToastModule(ReactApplicationContext reactContext) {
         super(reactContext);
-    }
-
-    private final ReactApplicationContext reactContext;
-
-    public ToastModule(ReactApplicationContext reactContext) {
-        super(reactContext);
-        this.reactContext = reactContext;
     }
 
     @Override
